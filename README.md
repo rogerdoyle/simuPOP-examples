@@ -1,18 +1,7 @@
-# simuPOP examples
+Roger Doyle
+This py project file tags the record of every individual in a simulated evolution with its ID, parentage and subpopulation membership along with genotype. I am greatly indebted to Bo Peng for advice on how to do this tagging, which helps in monitoring genetic changes in small populations that are fluctuating haphazardly in census number, effective population number and mating system.
 
-Collection of simuPOP scripts.
+The general objective of this simuPOP simulation project is to find indicators of genetic erosion and other genetic problems in small-holder aquaculture farms and hatcheries that, mostly for financial reasons, are unable to manage their broodstocks in any of the approved ways. None of the Fisher-Wright assumptions fit the demographies of such populations even approximately, hence the simulation.
 
-## NOTE:
+For background/context, two recent papers are available free on the web: Doyle, R.W., 2016. Inbreeding and disease in tropical shrimp aquaculture: a reappraisal and caution. Aquaculture Research. 47, 21-35; Doyle, R.W., 2014. ‘Big Picture’ Connects Shrimp Disease, Inbreeding. Global Aquaculture Advocate. 17 (Sept/Oct), 45-46.
 
-This repository collects many scripts that were written in Python 2.x and uses `simuOpt.Param` for parameter handling. Because newer version of simuPOP (1.1.8+) only supports Python 3.5+, and has deprecated `simuOpt.Param` (in favor of Python [argparse](https://docs.python.org/3/library/argparse.html), **many scripts will not work directly**.
-
-Therefore,
-* If you are interested only in the core simulation function, you can copy/paste the function to run it under Python 3 because the **simuPOP core stays compatible**.
-* If you would like to run the scripts, please
-  * Use `2to3 -w script.py` to convert the script to Python 3.
-  * Manually change the parameter passing function or use [misc/simuOptParam2argparse.py](misc/simuOptParam2argparse.py) to assist the conversion process.
-  * Submit a pull-request to fix the script.
-
-## Contributions
-
-If you have a simuPOP script that you would like to share with others, please fork this project, add your scripts, and submit a pull request. Please document your script as well as possible.
